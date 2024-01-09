@@ -1,0 +1,64 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header .dinny-header {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.main-header h1 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  padding: 0.6rem 1.3rem;
+  background: #eee;
+  color: red;
+  font-size: 40px;
+}
+
+.main-nav {
+  background: #333;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.main-nav .main-list {
+  padding: 0;
+  padding-left: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.main-list li {
+  list-style-type: none;
+  display: none;
+}
+
+.main-list li a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.hamburger {
+  padding-left: 0.4rem;
+  position: absolute;
+  top: 0;
+  right: 3%;
+}
+
+.hamburger .bar {
+  margin: 3px 0;
+  width: 20px;
+  height: 7px;
+  display: block;
+  background: #fff;
+}
+
+.main-list li.burger-content {
+  display: block;
+}
