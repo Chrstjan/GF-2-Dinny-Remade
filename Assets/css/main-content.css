@@ -1,30 +1,55 @@
 .about-dinny .about-header,
-.the-staff .staff-header {
+.the-staff .staff-header,
+.delivery-header,
+.gallery-header {
   color: orangered;
   padding-left: 0.4rem;
 }
 
 .about-dinny .about-figure img,
-.the-staff .staff-figure img {
+.the-staff .staff-figure img,
+.delivery .delivery-figure img,
+.dinny-gallery .gallery-figure img {
   width: 100%;
 }
 
 .about-figure figcaption header,
-.staff-figure figcaption header {
+.staff-figure figcaption header,
+.delivery-figure figcaption header {
   color: lightsteelblue;
 }
 
 .about-figure p,
-.staff-figure p {
+.staff-figure p,
+.delivery-figure p {
   color: #eee;
 }
 
 .about-figure figcaption .about-footer,
-.the-staff figcaption .about-footer {
+.the-staff figcaption .about-footer,
+.delivery figcaption .about-footer {
   text-align: right;
 }
 
 .about-footer a {
   color: #888;
   cursor: pointer;
+}
+
+.dinny-gallery .gallery-figure {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.6rem;
+}
+
+.gallery-figure .image-figure {
+  position: relative;
+}
+
+.image-figure .gallery-figcap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 12;
 }
