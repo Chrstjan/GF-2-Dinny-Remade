@@ -15,23 +15,27 @@
 
 .about-figure figcaption header,
 .staff-figure figcaption header,
-.delivery-figure figcaption header {
+.delivery-figure figcaption header,
+.gallery-figcap header {
   color: lightsteelblue;
 }
 
 .about-figure p,
 .staff-figure p,
-.delivery-figure p {
+.delivery-figure p,
+.gallery-figcap p {
   color: #eee;
 }
 
 .about-figure figcaption .about-footer,
 .the-staff figcaption .about-footer,
-.delivery figcaption .about-footer {
+.delivery figcaption .about-footer,
+.gallery-figcap footer {
   text-align: right;
 }
 
-.about-footer a {
+.about-footer a,
+.gallery-figcap footer a {
   color: #888;
   cursor: pointer;
 }
@@ -48,8 +52,9 @@
 
 .image-figure .gallery-figcap {
   position: absolute;
-  top: 0;
+  top: -3%;
   left: 50%;
   transform: translate(-50%);
   z-index: 12;
+  font-size: 10px;
 }
